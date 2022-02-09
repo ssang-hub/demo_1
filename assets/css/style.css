@@ -142,16 +142,8 @@ html{
     transform-origin: 90% top;
 
 }
-.noti-select{
-    
-} 
-.header__noti::before{
-    display: block;
-    position: absolute;
-    height: 20px;
-    width: 20px;
-    background-color:red
-}
+
+
 .noti-select:hover .header__noti{
     display:block;
     animation:header-notification ease-in .25s;
@@ -209,4 +201,28 @@ html{
 }
 .noti-viewed{
     background-color: rgba(143, 143, 143, 0.1) !important;
+}
+.header__noti::before{
+    content: "";
+    border-width: 20px 25px;
+    border-style:  solid;
+    border-color: transparent transparent white transparent;
+    position:absolute;
+    border: 100%;
+    width:0;
+    height: 0;
+    right: 3%;
+    top:-8%;
+}
+.header__noti::after{
+    content: "";
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    position:absolute;
+    top: -2.7rem;
+    right:-.7rem;
+}
+.list-itemleft{
+    display: flex
 }
