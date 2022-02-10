@@ -247,6 +247,40 @@ html{
 }
 .auth{
     margin: auto;
-    background-color: brown;
+    background-color: white;
     z-index: 2;
+}
+.infor{
+    padding: 1.5rem;
+    width:300px
+}
+.infor__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.infor__header-title{
+    font-size: 2rem;
+    font-weight: 400
+}
+.infor__header-switch{
+    font-size: 1.5rem;
+    font-weight: 450;
+    color:#f53e2d;
+}
+.infor__body input{
+    display: block;
+    margin: 1rem 0;
+    width:100%;
+    padding: 8px 8px;
+    font-size: 15px;
+
+}
+.infor__note{
+    text-align: center;
+    font-size: 2rem;
+}
+.infor__note-link{
+    color:#f53e2d
 }
