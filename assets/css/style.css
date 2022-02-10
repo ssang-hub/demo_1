@@ -4,6 +4,7 @@
     --white-color:white;
     --background-color:black;
     --text-color:#333;
+    --primary-color:#f53e2d;
 }
 
 
@@ -249,10 +250,11 @@ html{
     margin: auto;
     background-color: white;
     z-index: 2;
+    border-radius: 5px;
 }
 .infor{
-    padding: 1.5rem;
-    width:300px
+    padding: 2rem;
+    
 }
 .infor__header{
     display: flex;
@@ -279,8 +281,110 @@ html{
 }
 .infor__note{
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.2rem;
+    width:90%;
+    margin: 4rem auto ;
+   
+    
 }
 .infor__note-link{
-    color:#f53e2d
+    color:#f53e2d;
+    cursor: pointer;
+}
+.but-infor{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn{
+  
+    min-width: 140px;
+    height:36px;
+    border:none;
+    border-radius:2px;
+    font-size: 1.2rem;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+}
+.btn.btn-primary{
+    background-color:var(--primary-color);
+    color:white;
+}
+.btn.btn-back{
+    margin-right: .3em;
+    background-color: white;
+    color:rgba(0, 0, 0, .8)
+}
+.btn.btn-back:hover{
+    background-color: #efefef;
+}
+.auth__social{
+    padding: 2rem 4rem;
+    display: flex;
+    
+}
+.facebook-conn{
+    flex: 1;
+    margin-right: 1rem;
+    display:flex;
+    align-items: center;
+    border-radius: 2px;
+    border-color: rgba(0,0,0,.4);
+    
+    
+}
+.google-conn{
+    flex:1;
+    display:flex;
+    align-items: center;
+    border-radius: 2px;
+    border-color: rgba(0,0,0,.4);
+    
+}
+.facebook-conn:hover,
+.google-conn:hover{
+    background-color: rgba(143, 143, 143, 0.2);
+    cursor: pointer;
+}
+.facebook-conn__img{
+    background-image:url(../img/facebook.jpg);
+    background-size: cover;
+    width:20px;
+    height: 20px;
+}
+.google-conn__img{
+    background-image:url(../img/google.jpg);
+    background-size: cover;
+    width:20px;
+    height: 20px;
+    
+}
+
+.facebook-conn__text,
+.google-conn__text{
+    width:85%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+.infor__note-login{
+    text-align: center;
+    font-size: 1.2rem;
+    width:100%;
+    margin: 4rem 11rem ;
+}
+.infor__note-pass::after{
+    content: "";
+    border-left: 3px solid rgba(143, 143, 143, 0.6);
+    margin :0  8px 0 11px;
+    font-size: 1.5rem;
+
+}
+.infor__note-pass{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 450;
+}
+.infor__note-help{
+    color: rgba(143, 143, 143, 1);
+    font-size: 1.4rem;
 }
